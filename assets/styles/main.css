@@ -1,0 +1,199 @@
+* {
+  font-family: "Lusitana", serif;
+  font-size: 3vmin;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  color: #333;
+}
+
+#carousel {
+  margin-top: 100px;
+}
+
+#carousel .carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  margin: 50px 75px;
+  position: relative;
+}
+
+.content.last {
+  height: 50vh;
+}
+
+.content.last span {
+  display: inline-block;
+  font-size: 8vmin;
+  color: #777;
+  text-align: center;
+  width: 100%;
+  margin-top: 25vh;
+}
+
+.content * {
+  line-height: 175%;
+}
+
+.content.references {
+  margin-top: 100px;
+}
+
+.content.references * {
+  font-size: 0.8rem !important;
+}
+
+.content:not(.references):not(.last)::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  height: 5px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.landing {
+  min-height: 90vh;
+  max-height: 90vh;
+  position: relative;
+  background: url(http://fridakahlo.org/images/paintings/roots.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 -5px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 -5px 25px rgba(0, 0, 0, 0.6);
+}
+
+.landing::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.landing .text {
+  width: 100%;
+  text-align: center;
+  padding-top: 45vh;
+  -webkit-transform: translateY(-10vmin);
+          transform: translateY(-10vmin);
+}
+
+.landing h1 {
+  display: block;
+  font-size: 20vmin;
+  letter-spacing: -1vmin;
+  color: #ffffff;
+  z-index: 999;
+  text-shadow: 2px 3px 10px #000;
+}
+
+.image-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.image-info .single.image {
+  max-width: 50vw;
+}
+
+.image-info .double.image {
+  max-width: 25vw;
+}
+
+.image-info .image {
+  min-width: inherit;
+}
+
+.image-info .image img {
+  min-width: inherit;
+  max-width: inherit;
+}
+
+.image-info .image p, .image-info .image .image-subtitle, .image-info .image a {
+  font-size: 2.2vmin;
+  text-align: center;
+  color: #777;
+}
+
+.image-info .image a {
+  color: #158897;
+}
+
+.quote {
+  margin: 75px;
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  color: #777;
+  font-size: 6vmin;
+}
+
+.quote::before {
+  content: "\"";
+  font-size: 16vmin;
+  position: absolute;
+  top: 50px;
+  left: -2vmin;
+}
+
+.quote::after {
+  content: "\"";
+  font-size: 16vmin;
+  position: absolute;
+  top: calc(100% + 25px);
+  right: -2vmin;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 35px;
+  }
+  .content * {
+    font-size: 1.3rem !important;
+  }
+  .quote {
+    margin: 50px;
+    line-height: 125%;
+    margin-bottom: 75px;
+  }
+  .image-info .single.image {
+    max-width: calc(100vw);
+  }
+  .image-info p, .image-info a {
+    font-size: 1rem !important;
+  }
+  .content.last span {
+    font-size: 3rem !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
